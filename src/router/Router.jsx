@@ -5,6 +5,8 @@ import { page1Routes } from "./Page1Routes";
 import { Page2 } from "../Page2";
 
 export const Router = () => {
+  console.log(page1Routes);
+
   return (
     <Switch>
       <Route exact path="/">
@@ -21,6 +23,10 @@ export const Router = () => {
                 path={`${url}${route.path}`}
               >
                 {route.children}
+                <p>{`${url}${route.path}`}</p>
+                <p>path {route.path}</p>
+                <p>exact {route.exact}</p>
+                <p>children {route.children}</p>
               </Route>
             ))}
           </Switch>
