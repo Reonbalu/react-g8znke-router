@@ -16,11 +16,11 @@ export const Router = () => {
           <Switch>
             {page1Routes.map(route => (
               <Route
-                kye={route.path}
+                key={route.path}
                 exact={route.exact}
                 path={`${url}${route.path}`}
               >
-                {route.chidren}
+                {route.children}
               </Route>
             ))}
           </Switch>
