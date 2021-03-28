@@ -23,10 +23,6 @@ export const Router = () => {
                 path={`${url}${route.path}`}
               >
                 {route.children}
-                <p>{`${url}${route.path}`}</p>
-                <p>path {route.path}</p>
-                <p>exact {route.exact}</p>
-                <p>children {route.children}</p>
               </Route>
             ))}
           </Switch>
