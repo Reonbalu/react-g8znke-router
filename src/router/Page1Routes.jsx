@@ -7,16 +7,16 @@ export const page1Routes = [
   {
     path: "/",
     exact: true,
-    chidren: <Page1 />
+    children: <Page1 />
   },
   {
     path: "/detailA",
     exact: false,
-    chidren: <Page1DetailA />
+    children: <Page1DetailA />
   },
   {
     path: "/detailB",
     exact: false,
-    chidren: <Page1DetailB />
+    children: <Page1DetailB />
   }
 ];
